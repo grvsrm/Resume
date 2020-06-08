@@ -7,6 +7,6 @@ The vitae package is an excellent package to make use of and is available on CRA
 
 You can connect with me over [here](https://grvsrm.github.io/)
 
-
+(https://github.com/grvsrm/Resume/blob/master/CV_Gaurav%20Sharma%20RMD.pdf)
 
   
