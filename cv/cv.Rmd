@@ -1,0 +1,110 @@
+---
+name: Gaurav
+surname: Sharma
+position: Industry 4.0 . Digitization . Data Science 
+#address: Jaipur, Rajasthan, IN
+#headcolor: 414141
+phone: +91 9829176214
+www: grvsrm.github.io
+email: grvsrm@outlook.com
+twitter: GRStats
+github: grvsrm
+linkedin: grvsrm
+date: "`r format(Sys.time(), '%B %Y')`"
+docname: Resume Created in R using R Markdown
+output:
+  vitae::awesomecv: default
+  vitae::moderncv: default
+#aboutme: Without data you're just another person with an opinion - Sir W. Edwards Deming
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(vitae)
+```
+
+# Summary
+
+11+ years of experience in Automotive Manufacturing Industry in Advanced Manufacturing Analytics, Data Science, Industry 4.0, Factory Digitization, Plant Maintenance, Equipment Reliability and End to End Operation in Manufacturing. Functional and Configurational Exposure to SAP PM and RCM. Demonstrated ability to work across cross-functional teams, independently and proactively.
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Advanced Management Program in Business Analytics (AMPBA)", "2018-19", "Indian School of Business", "Hyderabad, IN",
+  "Bachelors of Engineering (BE)", "2004-08", "Jaipur Engg. College & Research Centre, University of Rajasthan", "Jaipur, IN"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Work Experience
+
+```{r consulting}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Manufacturing & Analytics", "FREELANCER", "Jaipur, IN", "Apr. 2019 - Present", "Independent Assignments related to Manufacturing, Business Analytics, Teaching and Training",
+  "Manager - Digitization", "NEI LTD.", "Jaipur, IN", "Apr. 2017 - Mar. 2019", "Managed Digitization Projects under Smart Factory Initiative with a Data Driven approach. Created PoCs and built Manufacturing Analytics use cases in manufacturing shop floor using advanced statistical and modern machine learning (supervised and unsupervised) methods",
+  "Manager - Digitization", "NEI LTD.", "Jaipur, IN", "Apr. 2017 - Mar. 2019", "Converted Business Challenges into Analytical Problems and implement solutions independently. Responsible for bridging the gap between implementation partners and senior management in terms of requirement freezing and project management and KPI monitoring.",
+  "Manager - Digitization", "NEI LTD.", "Jaipur, IN", "Apr. 2017 - Mar. 2019", "Experienced in Data Mining & Predictive Modelling – Causal, Time Series Forecasting, Simulation using Statistical Computer Language R/Python to draw inferences and conclusions from large data samples. Knowledge of Advance Probability and Statistical Concepts with their limitation and proper use.",
+  "Manager - Digitization", "NEI LTD.", "Jaipur, IN", "Apr. 2017 - Mar. 2019", "Experienced in Machine Learning Techniques for Prediction, Classification, Recommendation Systems and Clustering. Hands on experience of working on Data pre-processing, Feature Engineering, building Machine Learning Models and Ensembles, Hyperparameter tuning.",
+  "Manager - Operations & Maintenance", "NEI LTD.", "Jaipur, IN", "Apr. 2013 - Mar. 2017", "Responsible for achieving /surpassing departmental KPIs such as Availability, MTTR, MTBF by using continuous improvement (TPM/TQM) tools and methodologies. executing improvement projects and new equipment installations, adherence to TPM standards., reduce downtime and maintenance cost, identification and execution of cost reduction projects.",
+  "Manager - Operations & Maintenance", "NEI LTD.", "Jaipur, IN", "Apr. 2013 - Mar. 2017", "Implemented Computerized maintenance management system (CMMS) SAP PM in the entire plant. Implemented RCM in entire plant, conducted failure mode effect analysis (FMEA), created equipment care strategies to make reliability predictions using root cause failure analysis (RCFA) techniques, FMEA & CBM techniques.",
+  "Engineer - Operations & Maintenance", "NEI LTD.", "Jaipur, IN", "Aug. 2008 - Mar. 2013", "Full operational responsibility of electronic maintenance & planning of Industrial Equipment and Machinery, Robotics Automation, Industrial Automation, PLC Data Acquisition System. Overall responsible for department’s planned and unplanned maintenance program which includes breakdown, preventive and predictive maintenance planning and execution."
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+# Projects
+
+```{r}
+tribble(
+  ~Type, ~Desc, ~Company, ~Loc, ~Date,
+  "VEHICLE DAMAGE DETECTION USING DEEP LEARNING", "Capstone project for an auto insurance startup to create a business workflow on how to detect damage using deep learning and predict the cost of repair beforehand to assist the insurance provider in minimizing the overall turnaround time. Won Best Capstone Award for successful PoC in ISB.", "NEI LTD.", "Jaipur,IN", "",
+  "WORKFORCE MANAGEMENT USING KRONOS WFC", "Digitized workforce visibility in the entire plant. Implemented for white- and blue-collar employees. Created the entire cyberinfrastructure and a real-time dashboard that updates the supervisors and managers on availability of skilled workforce available in shift and also provide suggestions based on man-machine skill matching to minimize losses occurring due to skilled workforce unavailability. Lead change management.", "NEI LTD.", "Jaipur,IN", "",
+  "RCM IMPLEMENTATION", "Implemented Reliability Methodology in entire plant over across 1500 equipment. Drove entire project, ABC Analysis, conducted failure mode effect analysis (FMEA), performed asset criticalities, equipment cares strategies and maintenance policies to make reliability predictions for complete plant. Increased productivity by 21% on model lines. Lead change management.", "NEI LTD.", "Jaipur,IN", "",
+  "SAP PM – CMMS IMPLEMENTATION", "Designed SAP PM Process, As-Is To-Be Mapping, prepared master data for the Plant such as Functional Locations, Equipment & Sub-equipment, BOMs, Planner Groups, Work Centers, Measuring Points, Counters, Tasks Lists, Maintenance Packages, Maintenance Plans, Notifications, Breakdown & Preventive Orders. Achieved 90% process digitization. Lead change management.", "NEI LTD.", "Jaipur,IN", "",
+) %>% 
+  detailed_entries(Company, Date, Type, Loc, Desc)
+```
+<!-- Use following lines if you want a simple format to put -->
+<!-- # Skills -->
+
+<!-- ## Data Science -->
+
+<!-- * Data Wrangling, Feature Engineering, Data Visualization, Machine Learning, Statistical Analysis -->
+
+<!-- ## Languages & Applications -->
+
+<!-- * R, Tableau, Some SQL & Python -->
+
+<!-- ## Manufacturing -->
+
+<!-- * SAP PM, RCM, TPM, PLC & CNC Programming, Project Management, Change Management  -->
+
+# Skills
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc, ~Company, ~Loc,
+  "", "Data Science", "Data Wrangling, Feature Engineering, Data Visualization, Machine Learning, Statistical Analysis", "", "",
+  "", "Languages & Applications", "R, Tableau, Some SQL & Python", "", "",
+  "", "Manufacturing", "SAP PM, RCM, TPM, PLC & CNC Programming, Project Management, Change Management", "", "",
+) %>% 
+  detailed_entries(Desc, Year, Type, Company)
+```
+
+# Awards & Recognition
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc, ~Company, ~Loc,
+  2019, "Best Capstone Project Award", "Awarded for a successful deep learning PoC with an auto insurance startup", "ISB", "Hyderbad,IN",
+  2017, "CEO Circle Candidate", "Was recognized as Fast Track Employee in NEI Ltd.", "NEI LTD.", "Jaipur,IN",
+  2016, "Star Employee Award", "Awarded for exhibiting extra-ordinary leadership skills at workplace", "NEI LTD.", "Jaipur,IN",
+) %>% 
+  detailed_entries(Desc, Year, Type, Company)
+```
+
+
