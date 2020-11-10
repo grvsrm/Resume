@@ -1,9 +1,9 @@
 ---
 name: Gaurav
 surname: Sharma
-position: Industry 4.0 . Digitization . Data Science 
-#address: Jaipur, Rajasthan, IN
-#headcolor: 414141
+position: Analytics & Industry 4.0 Consultant
+address: Jaipur, Rajasthan, IN
+#headcolor: 000000
 phone: +91 9829176214
 www: gauravsharma.netlify.app
 email: grvsrm@outlook.com
