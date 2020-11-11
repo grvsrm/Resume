@@ -3,7 +3,7 @@ name: Gaurav
 surname: Sharma
 position: Analytics & Industry 4.0 Consultant
 address: Jaipur, Rajasthan, IN
-#headcolor: 000000
+#headcolor: 414141
 phone: +91 9829176214
 www: gauravsharma.netlify.app
 email: grvsrm@outlook.com
@@ -30,8 +30,7 @@ library(vitae)
 
 # Education
 
-```{r}
-library(tibble)
+```{r education}
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
   "Advanced Management Program in Business Analytics (AMPBA)", "2018-19", "Indian School of Business", "Hyderabad, IN",
@@ -42,10 +41,10 @@ tribble(
 
 # Work Experience
 
-```{r}
+```{r work experience}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Manufacturing & Analytics", "FREELANCER", "Jaipur, IN", "Apr. 2019 - Present", "Independent Assignments related to Manufacturing and Business Analytics",
+  "Analytics & Industry 4.0 Consultant", "INDEPENDENT", "Jaipur, IN", "Apr. 2019 - Present", "Independent Assignments related to Manufacturing and Business Analytics",
   "Manager - Digitization", "NEI LTD.", "Jaipur, IN", "Apr. 2017 - Mar. 2019", "Responsible for driving Digitization and Data Science Projects under Smart Factory Initiative. Building PoCs and Manufacturing Analytics use cases in manufacturing shop floor using advanced statistical and modern machine learning (supervised and unsupervised) methods",
   "Manager - Digitization", "NEI LTD.", "Jaipur, IN", "Apr. 2017 - Mar. 2019", "Responsible for scaling analytical capabilities across manufacturing value chain. Converting Business Challenges into Analytical Problems and implement solutions independently. Responsible for bridging the gap between implementation partners and senior management in terms of requirement freezing and project management and KPI monitoring.",
   "Manager - Digitization", "NEI LTD.", "Jaipur, IN", "Apr. 2017 - Mar. 2019", "Data Mining & building ML Models – Prediction, Classification, Clustering, Time Series Forecasting, Simulation using Statistical Computer Language R/Python to draw inferences and conclusions from large data samples. Hands on experience of working on Data pre-processing, Feature Engineering, building Machine Learning Models and Ensembles, Hyperparameter tuning.",
